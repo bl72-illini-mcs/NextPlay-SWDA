@@ -1,0 +1,16 @@
+{
+  "name": "forma-task-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A guest-owned Kanban task workspace",
+  "scripts": {
+    "check": "node --check dist/app.js",
+    "dev": "python3 -m http.server 5173 --directory dist",
+    "test": "node tests/integration.mjs"
+  },
+  "devDependencies": {
+    "linkedom": "0.18.15",
+    "@electric-sql/pglite": "0.5.16"
+  }
+}
